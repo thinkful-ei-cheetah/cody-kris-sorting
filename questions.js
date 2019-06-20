@@ -65,8 +65,25 @@ function sortLinkedList(LL){
   console.log(ll2)
 }
 
-sortLinkedList(ll);
+// sortLinkedList(ll);
 
- 3, 1 7, 5, 10
 
- 1,45,7,5,10, 20, 18, 4
+// . Sort in place
+// Write an algorithm to shuffle an array into a random order in place (i.e., without creating a new array).
+//const val = [1,2,3,4,5,6];
+
+
+function randomizer(arr){
+  const arrLength = arr.length;
+
+  for(let i = 0; i < arrLength; i++){
+    let randomIndex = Math.floor((Math.random() *  arr.length));
+    console.log(randomIndex, i)
+    if( arr[i] === arr[randomIndex]) continue;
+    [arr[i], arr[randomIndex ]] = [arr[randomIndex], arr[i] ];
+  }
+  console.log(arr);
+}
+
+// 8. Sorting books
+// Imagine that I gave you 20 books to sort in alphabetical order. Express this as an algorithm and them implement your algorithm.
