@@ -87,3 +87,14 @@ function randomizer(arr){
 
 // 8. Sorting books
 // Imagine that I gave you 20 books to sort in alphabetical order. Express this as an algorithm and them implement your algorithm.
+
+//Make sure eveything is case sensitive
+//If they start with a number they go first else:
+//sort alphabetically as you traverse each name. compare each name.
+//convert letters to their ascii values to compare which goes first.
+
+let datas = ['ah', 'Erfeb', 'CDbnmb', 'ddvb', 'efvd', 'ffv', 'glj','a', 'b', 'c', 'd', 'e', 'f', 'g', 'abb', 'Bsas', 'Casa', 'Dxs', 'cve', 'fds', 'gas'];
+
+console.log(datas.map(item=>item.toLowerCase()).sort());
+
+
