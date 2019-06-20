@@ -18,15 +18,13 @@ function bubbleSort(array) {
 
   if (swaps > 0) {
     return bubbleSort(array);
-  }
+  } 
   return array;
 }
-let counter = 0;
+
 //Merge Sort
 function mergeSort(array ) {
 
-  console.log(counter);
-  counter++;
 
   if (array.length <= 1) {
     return array;
@@ -47,7 +45,7 @@ function mergeSort(array ) {
 }
 
 function merge(left, right, array) {
-  console.log(array);
+
   let leftIndex = 0;
   let rightIndex = 0;
   let outputIndex = 0;
@@ -67,7 +65,7 @@ function merge(left, right, array) {
   for (let i = rightIndex; i < right.length; i++) {
     array[outputIndex++] = right[i];
   }
-  console.log('sorted', array);
+
   return array;
 }  
 
