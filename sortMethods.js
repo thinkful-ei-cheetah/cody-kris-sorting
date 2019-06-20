@@ -85,5 +85,5 @@ function partition(array, start, end) {
 }
 
 module.exports = {
-  bubbleSort, mergeSort,quickSort
+  bubbleSort, mergeSort, quickSort
 };
